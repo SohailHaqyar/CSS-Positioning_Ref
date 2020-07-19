@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700&display=swap");
+* {
+  font-family: "Noto Sans JP", sans-serif;
+}
+body {
+  background: #ccc;
+}
+.container {
+  background: white;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+nav {
+  background: #333;
+  width: 98%;
+  padding: 10px 20px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+nav li {
+  list-style-type: none;
+  margin: 0 10px;
+  float: right;
+  color: white;
+}
+
+.headliner {
+  position: relative;
+  max-height: 400px;
+  overflow: hidden;
+}
+.headliner h2 {
+  position: absolute;
+  top: 80px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+.headliner img {
+  width: 102%;
+}
+
+.service {
+  float: left;
+  background: #eee;
+  padding: 1%;
+  margin: 1%;
+  width: 29%;
+  height: 190px;
+  position: relative;
+}
+
+.service:nth-child(1) {
+  top: 5;
+}
+
+.service:nth-child(2) {
+  top: 15;
+}
+.service:nth-child(3) {
+  top: 25;
+}
+.services {
+  max-height: 200px;
+  overflow: hidden;
+}
+.content p {
+  column-width: 400px;
+  column-gap: 30px;
+  column-rule: 1px solid #ddd;
+}
+
+.content {
+  margin: 80px 0;
+  clear: left;
+}
+
+.columns {
+  background: white;
+}
+section,
+aside {
+  float: left;
+  width: 46%;
+  padding: 1%;
+  margin: 1%;
+  background: #333;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.459);
+}
